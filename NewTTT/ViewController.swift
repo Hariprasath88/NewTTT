@@ -67,7 +67,7 @@ var g6x2 : CGFloat = width
 var g6y1 : CGFloat = Line1Y + 10
 var g6y2 : CGFloat = Line2Y - 10
 var g6Name = AVSpeechUtterance(string: "CenterRight")
-//grid7
+//grid7 test
 var g7x1 : CGFloat = 0.0
 var g7x2 : CGFloat = line1X - 10
 var g7y1 : CGFloat = Line2Y + 10
