@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  NewTTT
+//  NewTTT1
 //
 //  Created by Vemilab on 8/3/17.
 //  Copyright © 2017 Vemilab. All rights reserved.
@@ -108,7 +108,7 @@ var speakPlayer = AVSpeechUtterance(string: "")
 
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var Bg: UIImageView!
     
     //the image of the X or O
@@ -118,20 +118,20 @@ class ViewController: UIViewController {
     //these are the UIImageViews that will hold the X or O
     //the 'G' stands for grids
     
-        @IBOutlet weak var G1: UIImageView!
-        @IBOutlet weak var G2: UIImageView!
-        @IBOutlet weak var G3: UIImageView!
-        @IBOutlet weak var G4: UIImageView!
-        @IBOutlet weak var G5: UIImageView!
-        @IBOutlet weak var G6: UIImageView!
-        @IBOutlet weak var G7: UIImageView!
-        @IBOutlet weak var G8: UIImageView!
-        @IBOutlet weak var G9: UIImageView!
+    @IBOutlet weak var G1: UIImageView!
+    @IBOutlet weak var G2: UIImageView!
+    @IBOutlet weak var G3: UIImageView!
+    @IBOutlet weak var G4: UIImageView!
+    @IBOutlet weak var G5: UIImageView!
+    @IBOutlet weak var G6: UIImageView!
+    @IBOutlet weak var G7: UIImageView!
+    @IBOutlet weak var G8: UIImageView!
+    @IBOutlet weak var G9: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        
         //setup doubleTap
         let doubleTap = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
         doubleTap.numberOfTapsRequired = 2
@@ -141,12 +141,12 @@ class ViewController: UIViewController {
         swipeRecognizer.numberOfTouchesRequired = 2
         swipeRecognizer.direction = .down
         view.addGestureRecognizer(swipeRecognizer)
-
+        
         let swipeThreeRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(userThreeSwiped))
         swipeThreeRecognizer.numberOfTouchesRequired = 3
         swipeThreeRecognizer.direction = .up
         view.addGestureRecognizer(swipeThreeRecognizer)
-
+        
         //try audio or start audio session
         do{
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
@@ -166,7 +166,7 @@ class ViewController: UIViewController {
         print (playersTurn)
         print (board)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -219,8 +219,8 @@ class ViewController: UIViewController {
             let touchCount = touches.count
             for _ in touches{
                 if (position.x != g1x1 && position.y != g1y1){
-                   // touchCounter += 1
-                   // print("Touch Count \(touchCounter) \(position)" )
+                    // touchCounter += 1
+                    // print("Touch Count \(touchCounter) \(position)" )
                     //timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
                     //print("Timer Count \(timer) )" )
                 }
@@ -453,7 +453,7 @@ class ViewController: UIViewController {
                         }
                         
                     }
-                    
+                        
                     else {
                         if speak.isSpeaking{
                             speak.stopSpeaking(at: AVSpeechBoundary.immediate)
@@ -476,7 +476,7 @@ class ViewController: UIViewController {
         timer.invalidate()
         touchCounter = 0
         if (speakSituation < 2){
-           //speak.stopSpeaking(at: AVSpeechBoundary.word)
+            //speak.stopSpeaking(at: AVSpeechBoundary.word)
         }
     }
     
@@ -495,11 +495,11 @@ class ViewController: UIViewController {
             print(isGameOver)
         }
         if( winner == " " ) {
-                if(countTurns>8){
-                    let tie = AVSpeechUtterance(string: "its a tie")
-                    tie.rate = 0.6
-                    speak.speak(tie)
-                }
+            if(countTurns>8){
+                let tie = AVSpeechUtterance(string: "its a tie")
+                tie.rate = 0.6
+                speak.speak(tie)
+            }
             return false // nobody won
         }
         else {
@@ -580,9 +580,9 @@ class ViewController: UIViewController {
             speak.speak(speakPlayer)
         }
         else{
-        speak.speak(speakPlayer)
+            speak.speak(speakPlayer)
         }
-
+        
     }
     
     //three finger swipe - reset game
@@ -626,7 +626,7 @@ class ViewController: UIViewController {
     }
     
     
-// Double tap for Selection
+    // Double tap for Selection
     
     func doubleTapped(){
         speakSituation = 3
@@ -979,10 +979,10 @@ class ViewController: UIViewController {
             }
         }
     }
-
     
     
-
-
+    
+    
+    
 }
 

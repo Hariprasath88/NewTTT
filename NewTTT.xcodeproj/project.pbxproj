@@ -12,6 +12,11 @@
 		5114CA6D1F33F8D7000FDB7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5114CA6B1F33F8D7000FDB7B /* Main.storyboard */; };
 		5114CA6F1F33F8D7000FDB7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5114CA6E1F33F8D7000FDB7B /* Assets.xcassets */; };
 		5114CA721F33F8D7000FDB7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5114CA701F33F8D7000FDB7B /* LaunchScreen.storyboard */; };
+		51AEA2FB1F62FE7D006F63E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AEA2FA1F62FE7D006F63E0 /* AppDelegate.swift */; };
+		51AEA2FD1F62FE7D006F63E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AEA2FC1F62FE7D006F63E0 /* ViewController.swift */; };
+		51AEA3021F62FE7D006F63E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51AEA3011F62FE7D006F63E0 /* Assets.xcassets */; };
+		51AEA3051F62FE7D006F63E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AEA3031F62FE7D006F63E0 /* LaunchScreen.storyboard */; };
+		51B9A9301F6308FB0039F98F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B9A92E1F6308FB0039F98F /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +27,24 @@
 		5114CA6E1F33F8D7000FDB7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5114CA711F33F8D7000FDB7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5114CA731F33F8D7000FDB7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51AEA2F81F62FE7D006F63E0 /* NewTTT1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewTTT1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51AEA2FA1F62FE7D006F63E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51AEA2FC1F62FE7D006F63E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		51AEA3011F62FE7D006F63E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51AEA3041F62FE7D006F63E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		51AEA3061F62FE7D006F63E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B9A92F1F6308FB0039F98F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5114CA611F33F8D7000FDB7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51AEA2F51F62FE7D006F63E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				5114CA661F33F8D7000FDB7B /* NewTTT */,
+				51AEA2F91F62FE7D006F63E0 /* NewTTT1 */,
 				5114CA651F33F8D7000FDB7B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				5114CA641F33F8D7000FDB7B /* NewTTT.app */,
+				51AEA2F81F62FE7D006F63E0 /* NewTTT1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +75,27 @@
 		5114CA661F33F8D7000FDB7B /* NewTTT */ = {
 			isa = PBXGroup;
 			children = (
+				5114CA6B1F33F8D7000FDB7B /* Main.storyboard */,
 				5114CA671F33F8D7000FDB7B /* AppDelegate.swift */,
 				5114CA691F33F8D7000FDB7B /* ViewController.swift */,
-				5114CA6B1F33F8D7000FDB7B /* Main.storyboard */,
 				5114CA6E1F33F8D7000FDB7B /* Assets.xcassets */,
 				5114CA701F33F8D7000FDB7B /* LaunchScreen.storyboard */,
 				5114CA731F33F8D7000FDB7B /* Info.plist */,
 			);
 			path = NewTTT;
+			sourceTree = "<group>";
+		};
+		51AEA2F91F62FE7D006F63E0 /* NewTTT1 */ = {
+			isa = PBXGroup;
+			children = (
+				51B9A92E1F6308FB0039F98F /* Main.storyboard */,
+				51AEA2FA1F62FE7D006F63E0 /* AppDelegate.swift */,
+				51AEA2FC1F62FE7D006F63E0 /* ViewController.swift */,
+				51AEA3011F62FE7D006F63E0 /* Assets.xcassets */,
+				51AEA3031F62FE7D006F63E0 /* LaunchScreen.storyboard */,
+				51AEA3061F62FE7D006F63E0 /* Info.plist */,
+			);
+			path = NewTTT1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +118,23 @@
 			productReference = 5114CA641F33F8D7000FDB7B /* NewTTT.app */;
 			productType = "com.apple.product-type.application";
 		};
+		51AEA2F71F62FE7D006F63E0 /* NewTTT1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51AEA3071F62FE7D006F63E0 /* Build configuration list for PBXNativeTarget "NewTTT1" */;
+			buildPhases = (
+				51AEA2F41F62FE7D006F63E0 /* Sources */,
+				51AEA2F51F62FE7D006F63E0 /* Frameworks */,
+				51AEA2F61F62FE7D006F63E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewTTT1;
+			productName = NewTTT1;
+			productReference = 51AEA2F81F62FE7D006F63E0 /* NewTTT1.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +147,12 @@
 				TargetAttributes = {
 					5114CA631F33F8D7000FDB7B = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NDZ83UVDLH;
+						ProvisioningStyle = Automatic;
+					};
+					51AEA2F71F62FE7D006F63E0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NDZ83UVDLH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -114,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				5114CA631F33F8D7000FDB7B /* NewTTT */,
+				51AEA2F71F62FE7D006F63E0 /* NewTTT1 */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +187,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51AEA2F61F62FE7D006F63E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B9A9301F6308FB0039F98F /* Main.storyboard in Resources */,
+				51AEA3051F62FE7D006F63E0 /* LaunchScreen.storyboard in Resources */,
+				51AEA3021F62FE7D006F63E0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,6 +206,15 @@
 			files = (
 				5114CA6A1F33F8D7000FDB7B /* ViewController.swift in Sources */,
 				5114CA681F33F8D7000FDB7B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51AEA2F41F62FE7D006F63E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51AEA2FD1F62FE7D006F63E0 /* ViewController.swift in Sources */,
+				51AEA2FB1F62FE7D006F63E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +235,22 @@
 				5114CA711F33F8D7000FDB7B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		51AEA3031F62FE7D006F63E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51AEA3041F62FE7D006F63E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		51B9A92E1F6308FB0039F98F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51B9A92F1F6308FB0039F98F /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -258,11 +351,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=*]" = NDZ83UVDLH;
 				INFOPLIST_FILE = NewTTT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hp.NewTTT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				sfb = "";
 			};
 			name = Debug;
 		};
@@ -270,8 +370,49 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NewTTT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hp.NewTTT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				sfb = "";
+			};
+			name = Release;
+		};
+		51AEA3081F62FE7D006F63E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NDZ83UVDLH;
+				INFOPLIST_FILE = NewTTT1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hp.NewTTT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		51AEA3091F62FE7D006F63E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NDZ83UVDLH;
+				INFOPLIST_FILE = NewTTT1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hp.NewTTT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -297,6 +438,16 @@
 				5114CA781F33F8D8000FDB7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51AEA3071F62FE7D006F63E0 /* Build configuration list for PBXNativeTarget "NewTTT1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51AEA3081F62FE7D006F63E0 /* Debug */,
+				51AEA3091F62FE7D006F63E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
